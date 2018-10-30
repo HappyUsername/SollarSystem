@@ -10,8 +10,9 @@ public class Planet extends Point {
     @Override
     void move() {
 
-        s.drawSolarObjectAbout(getxCord(), getyCord(), getSize(), getColor(), 120, getVelocity());
-        setVelocity(getVelocity() + 1);
+     //   s.drawSolarObjectAbout(getxCord(), getyCord(), getSize(), getColor(), 120, getVelocity());
+        s.drawSolarObjectAbout(getxCord(), getyCord(), getSize(), getColor(), 0, getVelocity());
+        setyCord(getyCord() + getVelocity());
 
     }
 }
